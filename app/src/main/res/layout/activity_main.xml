@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--TODO: Make your design better! -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autowateringControl"
+        android:id="@+id/autowatering_control"
+        android:checked="false"
+        android:layout_below="@+id/climate_control"
+        android:layout_alignParentStart="true"
+        android:onClick="Clicked" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/climateControl"
+        android:id="@+id/climate_control"
+        android:onClick="Clicked" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lightControl"
+        android:id="@+id/light_control"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="Clicked" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/pump_button"
+        android:textOff="@string/pumpOff"
+        android:textOn="@string/pumpOn"
+        android:layout_below="@+id/autowatering_control"
+        android:layout_toStartOf="@+id/conditioner_button"
+        android:onClick="Clicked" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conditioner_button"
+        android:checked="false"
+        android:textOff="@string/conditionerOff"
+        android:textOn="@string/conditionerOn"
+        android:layout_alignTop="@+id/pump_button"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/climate_control"
+        android:onClick="Clicked" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/light_button"
+        android:textOff="@string/lightOff"
+        android:textOn="@string/lightOn"
+        android:layout_alignStart="@+id/alarmsTextView"
+        android:layout_below="@+id/conditioner_button"
+        android:onClick="Clicked" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/alarmsText"
+        android:id="@+id/alarmsTextView"
+        android:layout_below="@+id/light_button"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/thief_alarm_button"
+        android:layout_below="@+id/alarmsTextView"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:layout_toStartOf="@+id/conditioner_button"
+        android:textOff="@string/thiefAlarmOff"
+        android:textOn="@string/thiefAlarmOn"
+        android:onClick="Clicked" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/fire_alarm_button"
+        android:layout_alignTop="@+id/thief_alarm_button"
+        android:layout_toEndOf="@+id/thief_alarm_button"
+        android:layout_alignEnd="@+id/conditioner_button"
+        android:textOff="@string/fireAlarmOff"
+        android:textOn="@string/fireAlarmOn"
+        android:onClick="Clicked" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dataTextView"
+        android:layout_alignEnd="@+id/fire_alarm_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fire_alarm_button"
+        android:text="@string/arduinoData" />
+
+</RelativeLayout>

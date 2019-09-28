@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Умный дом</string>
+
+    <string name="autowateringControl">Автополив</string>
+    <string name="climateControl">Климат-контроль</string>
+    <string name="lightControl">Управление светом</string>
+
+    <string name="conditionerOff">Кондеционер выключен</string>
+    <string name="conditionerOn">Кондеционер включен</string>
+
+    <string name="pumpOff">Насос выключен</string>
+    <string name="pumpOn">Насос включен</string>
+
+    <string name="lightOff">Свет выключен</string>
+    <string name="lightOn">Свет включен</string>
+
+    <string name="alarmsText">Сигнализации:</string>
+    <string name="thiefAlarmOff">Сигнализация от воров выключена</string>
+    <string name="thiefAlarmOn">Сигнализация от воров включена</string>
+    <string name="fireAlarmOff">Противопожарная сигнализация выключена</string>
+    <string name="fireAlarmOn">Противопожарная сигнализация включена</string>
+
+    <string name="arduinoData">Данные от Arduino:</string>
+
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Smart home</string>
+
+    <string name="autowateringControl">Autowatering</string>
+    <string name="climateControl">Climate-control</string>
+    <string name="lightControl">Light control</string>
+
+    <string name="conditionerOff">Conditioner OFF</string>
+    <string name="conditionerOn">Conditioner ON</string>
+
+    <string name="pumpOff">Pump OFF</string>
+    <string name="pumpOn">Pump ON</string>
+
+    <string name="lightOff">Light OFF</string>
+    <string name="lightOn">Light ON</string>
+
+    <string name="alarmsText">Alarms:</string>
+    <string name="thiefAlarmOff">Thief alarm OFF</string>
+    <string name="thiefAlarmOn">Thief alarm ON</string>
+    <string name="fireAlarmOff">Fire alarm OFF</string>
+    <string name="fireAlarmOn">Fire alarm ON</string>
+
+    <string name="arduinoData">Arduino data:</string>
+
+</resources>
